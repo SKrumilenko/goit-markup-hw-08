@@ -1,0 +1,15 @@
+.contacts {
+    @include flex(flex, null, null, 50px, null);
+    color: var(--grey-txt-cl);
+}
+
+.contacts__link {
+    @extend %link;
+    @include flex(flex, center, center, 10px, null);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.contacts__icon {
+    fill: currentColor;
+}

@@ -1,0 +1,127 @@
+.register-form {
+  padding: 40px;
+}
+
+.register-form__title {
+  display: block;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+}
+
+.register-form__group {
+  margin-bottom: 20px;
+}
+
+.register-form__field {
+  display: block;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.register-form__label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--grey-txt-cl);
+}
+
+.register-form__input {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: var(--btn-radius);
+  transition: border-color var(--anim);
+
+  &:focus-within > .register-form__icon,
+  &:focus-within {
+    fill: var(--accent-txt-cl);
+    border-color: var(--accent-bg-cl);
+  }
+}
+
+.register-form__text {
+  width: 100%;
+  height: auto;
+  outline: none;
+  padding: 0;
+  border: none;
+}
+
+.register-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: fill var(--anim);
+}
+
+.register-form__comment {
+  display: block;
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: var(--btn-radius);
+}
+
+.register-form__checkbox {
+  @extend %hidden;
+
+  &:checked + .register-form__checkbox-icons .register-form__icon-checked {
+    opacity: 1;
+  }
+
+  &:checked + .register-form__checkbox-icons .register-form__icon-unchecked {
+    opacity: 0;
+  }
+
+  &:focus + .register-form__checkbox-icons {
+    outline: 2px solid rgb(56, 87, 107);
+    outline-offset: 1px;
+    border-radius: 2px;
+  }
+}
+
+.register-form__agreement {
+  @include flex(flex, center, center, 7px, null);
+  margin-bottom: 30px;
+}
+
+.register-form__icon-checked {
+  opacity: 0;
+  fill: var(--accent-txt-cl);
+  transition: opacity var(--anim);
+}
+
+.register-form__icon-unchecked {
+  transition: opacity var(--anim);
+}
+
+.register-form__desc {
+  color: var(--grey-txt-cl);
+  user-select: none;
+}
+
+.register-form__link {
+  color: var(--accent-txt-cl);
+}
+
+.register-form__btn {
+  margin: 0 auto;
+  display: block;
+}

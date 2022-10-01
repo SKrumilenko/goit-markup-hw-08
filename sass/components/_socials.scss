@@ -1,0 +1,28 @@
+.socials {
+  @include flex(flex, center, null, 10px, nowrap);
+}
+
+.socials__link {
+  @extend %link;
+  @include flex(flex, center, center, null, null);
+  color: var(--icon-cl);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: color var(--anim), background-color var(--anim);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-bg-cl);
+    color: var(--light-txt-cl);
+  }
+}
+
+.socials__link--other-colors {
+  background-color: var(--footer-soc-bg);
+  color: var(--light-txt-cl);
+}
+
+.socials__icon {
+  fill: currentColor;
+}

@@ -1,0 +1,23 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &--no-top-padding {
+    padding-top: 0;
+  }
+
+  &--other-bg-color {
+    background-color: var(--gray-bg-cl);
+  }
+}
+
+.section__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+
+  &--hidden {
+    @extend %hidden;
+  }
+}

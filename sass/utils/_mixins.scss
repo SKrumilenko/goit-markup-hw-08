@@ -1,0 +1,12 @@
+/**
+  |============================
+  | FLEX mixin
+  |============================
+*/
+@mixin flex($display, $just-cont, $align-item, $gap, $wrap) {
+    display: $display;
+    justify-content: $just-cont;
+    align-items: $align-item;
+    gap: $gap;
+    flex-wrap: $wrap;
+}
