@@ -1,15 +1,38 @@
 .card-set {
-  @include flex(flex, null, null, 30px, wrap);
+  @media screen and (min-width: 768px) {
+    @include flex(flex, null, null, 30px, wrap);
+  }
 }
 
 .card-set__item {
-  flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) / var(--items));
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: var(--gap);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    --items: 2;
+    display: flex;
+    flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) / var(--items));
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 3;
+  }
 }
 
 .card-set__link {
   @extend %link;
   display: block;
   transition: box-shadow var(--anim);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   &:hover,
   &:focus {
@@ -27,6 +50,10 @@
 .card-set__wrap {
   padding: 20px 24px;
   border: 1px solid var(--filter-brd);
+
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
+  }
 }
 
 .card-set__title {
@@ -55,10 +82,10 @@
   transform: translateY(100%);
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 77px 24px;
+
+  @include flex(flex, center, center, null, null);
+
   background-color: var(--overlay-bg);
   backdrop-filter: blur(4px);
   transition: transform var(--anim);
@@ -66,7 +93,7 @@
 
 .card-set__overlay-desc {
   font-size: 18px;
-  line-height: calc(28 / 14);
+  line-height: calc(28 / 18);
   color: var(--light-txt-cl);
   user-select: none;
 }

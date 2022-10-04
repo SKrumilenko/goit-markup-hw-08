@@ -12,7 +12,13 @@
 
 .header__logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  margin-right: 88px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
 }

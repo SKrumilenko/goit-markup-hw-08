@@ -1,10 +1,19 @@
 .filter {
-  @include flex(flex, center, null, 8px, nowrap);
-  margin-bottom: 50px;
+  @include flex(flex, flex-start, null, 8px, wrap);
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__btn {
-  padding: 8px 22px;
+  padding: 6px 25px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;

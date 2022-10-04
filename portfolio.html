@@ -46,6 +46,16 @@
             </a>
           </li>
         </ul>
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -63,13 +73,66 @@
             <li class="card-set__item">
               <a class="card-set__link" href="">
                 <div class="card-set__thumb">
-                  <img
-                    src="./images/portfolio/img-1.jpg"
-                    alt="Page in notebook with peoples"
-                    class="img"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1-desc_@1x.webp 1x,
+                        ./images/portfolio/img-1-desc_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1-desc_@1x.jpg 1x,
+                        ./images/portfolio/img-1-desc_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1-tab_@1x.webp 1x,
+                        ./images/portfolio/img-1-tab_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1-tab_@1x.jpg 1x,
+                        ./images/portfolio/img-1-tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-1-mob_@1x.webp 1x,
+                        ./images/portfolio/img-1-mob_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-1-mob_@1x.jpg 1x,
+                        ./images/portfolio/img-1-mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-1-mob_@1x.jpg"
+                      alt="Page in notebook with peoples"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -88,13 +151,66 @@
             <li class="card-set__item">
               <a class="card-set__link" href="">
                 <div class="card-set__thumb">
-                  <img
-                    src="./images/portfolio/img-2.jpg"
-                    alt="Two men plays bascketball"
-                    class="img"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2-desc_@1x.webp 1x,
+                        ./images/portfolio/img-2-desc_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2-desc_@1x.jpg 1x,
+                        ./images/portfolio/img-2-desc_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2-tab_@1x.webp 1x,
+                        ./images/portfolio/img-2-tab_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2-tab_@1x.jpg 1x,
+                        ./images/portfolio/img-2-tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-2-mob_@1x.webp 1x,
+                        ./images/portfolio/img-2-mob_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-2-mob_@1x.jpg 1x,
+                        ./images/portfolio/img-2-mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-2-mob_@1x.jpg"
+                      alt="Two men plays bascketball"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -113,13 +229,66 @@
             <li class="card-set__item">
               <a class="card-set__link" href="">
                 <div class="card-set__thumb">
-                  <img
-                    src="./images/portfolio/img-3.jpg"
-                    alt="The emblem of restaurant"
-                    class="img"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3-desc_@1x.webp 1x,
+                        ./images/portfolio/img-3-desc_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3-desc_@1x.jpg 1x,
+                        ./images/portfolio/img-3-desc_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3-tab_@1x.webp 1x,
+                        ./images/portfolio/img-3-tab_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3-tab_@1x.jpg 1x,
+                        ./images/portfolio/img-3-tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-3-mob_@1x.webp 1x,
+                        ./images/portfolio/img-3-mob_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-3-mob_@1x.jpg 1x,
+                        ./images/portfolio/img-3-mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-3-mob_@1x.jpg"
+                      alt="The emblem of restaurant"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -138,13 +307,66 @@
             <li class="card-set__item">
               <a class="card-set__link" href="">
                 <div class="card-set__thumb">
-                  <img
-                    src="./images/portfolio/img-4.jpg"
-                    alt="The headphones"
-                    class="img"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4-desc_@1x.webp 1x,
+                        ./images/portfolio/img-4-desc_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4-desc_@1x.jpg 1x,
+                        ./images/portfolio/img-4-desc_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4-tab_@1x.webp 1x,
+                        ./images/portfolio/img-4-tab_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4-tab_@1x.jpg 1x,
+                        ./images/portfolio/img-4-tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-4-mob_@1x.webp 1x,
+                        ./images/portfolio/img-4-mob_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-4-mob_@1x.jpg 1x,
+                        ./images/portfolio/img-4-mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-4-mob_@1x.jpg"
+                      alt="The headphones"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -163,13 +385,66 @@
             <li class="card-set__item">
               <a class="card-set__link" href="">
                 <div class="card-set__thumb">
-                  <img
-                    src="./images/portfolio/img-5.jpg"
-                    alt="Two boxes"
-                    class="img"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5-desc_@1x.webp 1x,
+                        ./images/portfolio/img-5-desc_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5-desc_@1x.jpg 1x,
+                        ./images/portfolio/img-5-desc_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5-tab_@1x.webp 1x,
+                        ./images/portfolio/img-5-tab_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5-tab_@1x.jpg 1x,
+                        ./images/portfolio/img-5-tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-5-mob_@1x.webp 1x,
+                        ./images/portfolio/img-5-mob_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-5-mob_@1x.jpg 1x,
+                        ./images/portfolio/img-5-mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-5-mob_@1x.jpg"
+                      alt="Two boxes"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -188,13 +463,66 @@
             <li class="card-set__item">
               <a class="card-set__link" href="">
                 <div class="card-set__thumb">
-                  <img
-                    src="./images/portfolio/img-6.jpg"
-                    alt="The Website opened at the monitor"
-                    class="img"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6-desc_@1x.webp 1x,
+                        ./images/portfolio/img-6-desc_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6-desc_@1x.jpg 1x,
+                        ./images/portfolio/img-6-desc_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6-tab_@1x.webp 1x,
+                        ./images/portfolio/img-6-tab_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6-tab_@1x.jpg 1x,
+                        ./images/portfolio/img-6-tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-6-mob_@1x.webp 1x,
+                        ./images/portfolio/img-6-mob_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-6-mob_@1x.jpg 1x,
+                        ./images/portfolio/img-6-mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-6-mob_@1x.jpg"
+                      alt="The Website opened at the monitor"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -213,13 +541,66 @@
             <li class="card-set__item">
               <a class="card-set__link" href="">
                 <div class="card-set__thumb">
-                  <img
-                    src="./images/portfolio/img-7.jpg"
-                    alt="The open book"
-                    class="img"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7-desc_@1x.webp 1x,
+                        ./images/portfolio/img-7-desc_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7-desc_@1x.jpg 1x,
+                        ./images/portfolio/img-7-desc_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7-tab_@1x.webp 1x,
+                        ./images/portfolio/img-7-tab_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7-tab_@1x.jpg 1x,
+                        ./images/portfolio/img-7-tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-7-mob_@1x.webp 1x,
+                        ./images/portfolio/img-7-mob_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-7-mob_@1x.jpg 1x,
+                        ./images/portfolio/img-7-mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-7-mob_@1x.jpg"
+                      alt="The open book"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -238,13 +619,66 @@
             <li class="card-set__item">
               <a class="card-set__link" href="">
                 <div class="card-set__thumb">
-                  <img
-                    src="./images/portfolio/img-8.jpg"
-                    alt="The lanyard tag"
-                    class="img"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8-desc_@1x.webp 1x,
+                        ./images/portfolio/img-8-desc_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8-desc_@1x.jpg 1x,
+                        ./images/portfolio/img-8-desc_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8-tab_@1x.webp 1x,
+                        ./images/portfolio/img-8-tab_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8-tab_@1x.jpg 1x,
+                        ./images/portfolio/img-8-tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8-mob_@1x.webp 1x,
+                        ./images/portfolio/img-8-mob_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8-mob_@1x.jpg 1x,
+                        ./images/portfolio/img-8-mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-8-mob_@1x.jpg"
+                      alt="The lanyard tag"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -263,13 +697,66 @@
             <li class="card-set__item">
               <a class="card-set__link" href="">
                 <div class="card-set__thumb">
-                  <img
-                    src="./images/portfolio/img-9.jpg"
-                    alt="Two hands works on notebook"
-                    class="img"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-9-desc_@1x.webp 1x,
+                        ./images/portfolio/img-9-desc_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-9-desc_@1x.jpg 1x,
+                        ./images/portfolio/img-9-desc_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-9-tab_@1x.webp 1x,
+                        ./images/portfolio/img-9-tab_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-9-tab_@1x.jpg 1x,
+                        ./images/portfolio/img-9-tab_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-9-mob_@1x.webp 1x,
+                        ./images/portfolio/img-9-mob_@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-9-mob_@1x.jpg 1x,
+                        ./images/portfolio/img-9-mob_@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-9-mob_@1x.jpg"
+                      alt="Two hands works on notebook"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <div class="card-set__overlay">
                     <p class="card-set__overlay-desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -290,83 +777,85 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__address">
-          <a class="logo" href="./index.html">Web<span class="logo__light">Studio</span></a>
-          <address class="footer__desc">
-            <ul>
-              <li class="footer__item">
+        <div class="footer__wrap">
+          <div class="footer__address">
+            <a class="logo" href="./index.html">Web<span class="logo__light">Studio</span></a>
+            <address class="footer__desc">
+              <ul>
+                <li class="footer__item">
+                  <a
+                    href="https://goo.gl/maps/FVtRiQrszEMNCLTm8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__item footer__item--color">
+                  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="footer__item footer__item--color">
+                  <a href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__joinus">
+            <h2 class="footer__title">приєднуйтесь</h2>
+            <ul class="socials">
+              <li>
                 <a
-                  href="https://goo.gl/maps/FVtRiQrszEMNCLTm8"
+                  class="socials__link socials__link--other-colors"
+                  href="https://instagram.com"
+                  aria-label="Instagram"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item footer__item--color">
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li>
+                <a
+                  class="socials__link socials__link--other-colors"
+                  href="https://twitter.com"
+                  aria-label="Twitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item footer__item--color">
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
+              <li>
+                <a
+                  class="socials__link socials__link--other-colors"
+                  href="https://facebook.com"
+                  aria-label="Facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="socials__link socials__link--other-colors"
+                  href="https://linkedin.com"
+                  aria-label="Linkedin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__joinus">
-          <h2 class="footer__title">приєднуйтесь</h2>
-          <ul class="socials">
-            <li>
-              <a
-                class="socials__link socials__link--other-colors"
-                href="https://instagram.com"
-                aria-label="Instagram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="socials__link socials__link--other-colors"
-                href="https://twitter.com"
-                aria-label="Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="socials__link socials__link--other-colors"
-                href="https://facebook.com"
-                aria-label="Facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="socials__link socials__link--other-colors"
-                href="https://linkedin.com"
-                aria-label="Linkedin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <form class="footer__form" name="footer-form">
           <div>
@@ -384,5 +873,87 @@
         </form>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="menu js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu menu-btn">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="menu__nav">
+        <li class="menu__item">
+          <a href="./index.html" class="menu__link">Студія</a>
+        </li>
+        <li class="menu__item">
+          <a href="./portfolio.html" class="menu__link menu__link--active">Портфоліо</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="menu__contacts">
+        <li class="menu__item">
+          <a class="menu__link menu__link--tel" href="tel:+380961111111"> +38 096 111 11 11</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link menu__link--mail" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="menu__socials">
+        <li>
+          <a
+            class="menu__link menu__link--socials menu__link--socials-vl"
+            href="https://instagram.com"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram
+          </a>
+        </li>
+        <li>
+          <a
+            class="menu__link menu__link--socials menu__link--socials-vl"
+            href="https://twitter.com"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Twitter
+          </a>
+        </li>
+        <li>
+          <a
+            class="menu__link menu__link--socials menu__link--socials-vl"
+            href="https://facebook.com"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook
+          </a>
+        </li>
+        <li>
+          <a
+            class="menu__link menu__link--socials"
+            href="https://linkedin.com"
+            aria-label="Linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
