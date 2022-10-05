@@ -1529,6 +1529,13 @@ body {
         flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 @media screen and (max-width: 1199px) {
   .footer__wrap {
