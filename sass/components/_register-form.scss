@@ -9,6 +9,11 @@
   font-size: 20px;
   line-height: calc(30 / 20);
 
+  @media screen and (max-width: 330px) {
+    font-size: 18px;
+    line-height: calc(27 / 18);
+  }
+
   @media screen and (min-width: 1200px) {
     line-height: calc(23 / 20);
   }
